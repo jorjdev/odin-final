@@ -1,0 +1,125 @@
+/*      GLOBAL STYLES        */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  overflow-x: hidden;
+}
+
+/* * {
+    border-width:1px;
+    border:solid red;
+ } */
+
+body {
+  width: inherit;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+}
+
+.hero .about {
+  position: relative;
+}
+
+/*           MOBILE FIRST            */
+
+/* HERO SECTION  */
+
+@media (max-width: 500px) {
+  .hero {
+    position: relative;
+    z-index: -100;
+    background-color: white;
+  }
+
+  .for-skew {
+    width: 100vw;
+    height: 75vh;
+    background-color: white;
+    transform: skew(0deg, -40deg) translateY(20rem);
+  }
+
+  .hero-background {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    padding: 30px 0;
+    top: 0;
+    width: 100vw;
+    height: 80vh;
+    z-index: -1;
+    background: #a13d1b;
+  }
+
+  .hero-image {
+    position: relative;
+    z-index: 1;
+    width: 80vw;
+    margin: 5% auto 0;
+    min-height: 32rem;
+    background-image: url("/images/cat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero-name {
+    right: auto;
+    position: relative;
+    font-size: 4.7rem;
+    top: 4.3rem;
+    margin-left: 0.7rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  /* END OF HERO SECTION */
+
+  /* ABOUT SECTION */
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-title {
+    position: relative;
+    margin: auto;
+    color: black;
+    font-size: 3.6rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .about-content {
+    position: relative;
+    margin: auto;
+    color: black;
+    font-size: 1.6rem;
+    padding: 1rem 1.9rem 0.7rem;
+    line-height: 2.2rem;
+
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .social-button-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .social-button {
+    padding: 0 1rem;
+  }
+  i {
+    font-size: 2rem;
+  }
+}
